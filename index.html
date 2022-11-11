@@ -19,6 +19,7 @@
             <div class="container container--flex">
                 <div class="logo-container">
                     <img src="./images/Logo.svg" alt="logo" class="logo">
+                    <img src="./images/LogoDesktop.svg" alt="logo" class="logo-desktop">
                 </div>
                 <nav class="nav">
                     <ul class="nav-list">
@@ -31,7 +32,7 @@
 
 
         <section class="hero section">
-            <div class="container">
+            <div class="container hero-container">
                 <div class="hero-text-container">
                     <h1 class="hero__title">ÇA PASSE CRÈME</h1>
                     <p class="hero__text">
@@ -52,31 +53,11 @@
                             <use href="./images/sprite.svg#icon-arrowLeft" />
                         </svg>
                         <ul class="overlay__list">
-                            <li class="overlay__list_item item--active">
-                                <!-- <svg class="active">
-                                    <use href="./images/sprite.svg#icon-EllipseBig" />
-                                </svg> -->
-                            </li>
-                            <li class="overlay__list_item">
-                                <!-- <svg class="dott">
-                                    <use href="./images/sprite.svg#icon-Ellipse" />
-                                </svg> -->
-                            </li>
-                            <li class="overlay__list_item">
-                                <!-- <svg class="dott ">
-                                    <use href="./images/sprite.svg#icon-Ellipse" />
-                                </svg> -->
-                            </li>
-                            <li class="overlay__list_item">
-                                <!-- <svg class="dott ">
-                                    <use href="./images/sprite.svg#icon-Ellipse" />
-                                </svg> -->
-                            </li>
-                            <li class="overlay__list_item">
-                                <!-- <svg class="dott ">
-                                    <use href="./images/sprite.svg#icon-Ellipse" />
-                                </svg> -->
-                            </li>
+                            <li class="overlay__list_item item--active"></li>
+                            <li class="overlay__list_item"></li>
+                            <li class="overlay__list_item"></li>
+                            <li class="overlay__list_item"></li>
+                            <li class="overlay__list_item"></li>
                         </ul>
                         <svg class="arrow arrow-right">
                             <use href="./images/sprite.svg#icon-arrowRight" />
@@ -91,7 +72,9 @@
             <h2 class="about-us__title h2-title" id="about-us">About US</h2>
             <div class="about-us__card">The best service, satisfied customers, delicious coffee from the most exotic
                 countries and a wide range of drinks and
-                desserts - that's all about us! Come to <a href="!" class="card__link">Ça Passe Crème</a> and see for
+                desserts - that's all about us! Come to <a
+                    href="https://www.google.com/maps/place/%C3%87A+PASSE+CR%C3%88ME+!/@46.5163813,6.6254908,17z/data=!3m1!4b1!4m5!3m4!1s0x478c2f3f021908c3:0x18601545e2a915a4!8m2!3d46.5163813!4d6.6254908"
+                    class="card__link" target="_blank">Ça Passe Crème</a> and see for
                 yourself! Wir warten auf Sie!</div>
         </div>
     </section>
@@ -109,44 +92,46 @@
                 <div class="map">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d995.1392793147802!2d6.625065583044368!3d46.51658263070356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c2fd33d41c1dd%3A0x575df0118b771ad1!2zQmQgZGUgR3JhbmN5IDQ5LCAxMDA2IExhdXNhbm5lLCDQqNCy0LXQudGG0LDRgNC40Y8!5e0!3m2!1sru!2spl!4v1668108732597!5m2!1sru!2spl"
-                        width="303" height="240" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        width="100%" height="100%" style="border: 0; border-radius: 24px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <!-- <img src="./images/map.jpg" alt="cafe" usemap="#cafe" width="335" height="240"> -->
-                <!-- <map name="cafe"></map> -->
-                <div class="adress-container">
-                    <p class="card-title">Adress</p>
-                    <address class="adress">Bd de Grancy 49, 1006 Lausanne, Switzerland</address>
+                <div class="left-side-container">
+                    <div class="adress-container">
+                        <p class="card-title">Adress</p>
+                        <address class="adress">Bd de Grancy 49, 1006 Lausanne, Switzerland</address>
+                    </div>
+                    <p class="card-title hours-info">Business Hours</p>
+                    <ul class="hours-list">
+                        <li class="hours-list__item"><span class="day">Monday:</span>
+                            <span class="time">Closed</span>
+                        </li>
+                        <li class="hours-list__item"><span class="day">Tuesday:</span>
+                            <span class="time">08:00-14:30</span>
+                        </li>
+                        <li class="hours-list__item"><span class="day">Wednesday:</span>
+                            <span class="time">08:00-14:30</span>
+                        </li>
+                        <li class="hours-list__item"><span class="day">Thursday:</span>
+                            <span class="time">08:00-14:30</span></li>
+                        <li class="hours-list__item"><span class="day">Friday:</span>
+                            <span class="time">08:00-14:30</span>
+                        </li>
+                        <li class="hours-list__item"><span class="day">Saturday:</span>
+                            <span class="time">10:00-17:00</span>
+                        </li>
+                        <li class="hours-list__item"><span class="day">Sunday:</span>
+                            <span class="time">Closed</span>
+                        </li>
+                    </ul>
+                    <a href="https://www.instagram.com/capassecreme.ch/" target="_blank">
+                        <button type="button" class="info-card__btn">
+                            <svg class="inst-icon">
+                                <use href="./images/sprite.svg#icon-instagram" />
+                            </svg>
+                            Check Our Instagram
+                        </button>
+                    </a>
                 </div>
-                <p class="card-title hours-info">Business Hours</p>
-                <ul class="hours-list">
-                    <li class="hours-list__item"><span class="day">Monday:</span>
-                        <span class="time">Closed</span>
-                    </li>
-                    <li class="hours-list__item"><span class="day">Tuesday:</span>
-                        <span class="time">08:00-14:30</span>
-                    </li>
-                    <li class="hours-list__item"><span class="day">Wednesday:</span>
-                        <span class="time">08:00-14:30</span>
-                    </li>
-                    <li class="hours-list__item"><span class="day">Thursday:</span>
-                        <span class="time">08:00-14:30</span></li>
-                    <li class="hours-list__item"><span class="day">Friday:</span>
-                        <span class="time">08:00-14:30</span>
-                    </li>
-                    <li class="hours-list__item"><span class="day">Saturday:</span>
-                        <span class="time">10:00-17:00</span>
-                    </li>
-                    <li class="hours-list__item"><span class="day">Sunday:</span>
-                        <span class="time">Closed</span>
-                    </li>
-                </ul>
-                <button type="button" class="info-card__btn">
-                    <svg class="inst-icon">
-                        <use href="./images/sprite.svg#icon-instagram" />
-                    </svg>
-                    Check Our Instagram
-                </button>
             </div>
         </div>
         </div>

@@ -11,6 +11,10 @@ h1, h2{
     font-family: 'Poller One', cursive;
 }
 
+a{
+    cursor: pointer;
+}
+
 p,
 h1,
 h2,
@@ -42,7 +46,7 @@ header{
 }
 
 .container{
-    max-width: 100%;
+    max-width: 375px;
     margin: 0 auto;
     padding: 0 16px;
 }
@@ -67,16 +71,15 @@ header{
         height: 100%;
 }
 
-/* .logo-container{
-        background: #F6EDE5;
-        padding: 3px;
-        padding-top: 14.29px;
-        border-radius: 5px 5px 100px 100px;
-} */
 
 .logo{
     width: 104px;
     height: 80px;
+    margin-left: -14px;
+}
+
+.logo-desktop{
+    display: none;
 }
 
 .nav-list{
@@ -137,7 +140,7 @@ header{
 
 .hero__slider{
     height: 256px;
-    width: 343px;
+    max-width: 343px;
     border-radius: 16px;
     border: 4px solid #FFFFFF;
     /* position: absolute;
@@ -165,6 +168,10 @@ header{
 .arrow{
     width: 20px;
     height: 20px;
+}
+
+.arrow:hover{
+    cursor: pointer;
 }
 
 .slide{
@@ -234,12 +241,11 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
 }
 
 .map{
     margin-bottom: 32px;
-    /* margin: 0 auto; */
+    height: 240px;
 }
 
 .adress-container{
@@ -306,17 +312,194 @@ header{
     color: #F97836;
     font-size: 16px;
     line-height: 24px;
+    cursor: pointer;
 }
 
 .inst-icon{
     margin-right: 12px;
     width: 24px;
-        height: 24px;
+    height: 24px;
 }
 
 .find-us-section{
     margin-bottom: 10px;
 }
+
+@media screen and (min-width: 1440px) {
+    header{
+        height: 112px;
+        margin-bottom: 16px;
+    }
+
+    .container{
+        max-width: 1440px;
+        padding: 0 120px;
+    }
+
+    .logo{
+        display: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .logo-desktop{
+        display: block;
+        margin-left: -24px;
+        width: 144px;
+        height: 112px;
+    }
+
+    .nav-list__item{
+        font-size: 20px;
+
+    }
+
+    .nav-list__item + .nav-list__item{
+        margin-left: 32px;
+    }
+
+    .bg-container{
+        background: url(../images/heroDesktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: 10px; */
+        /* background-attachment: fixed; */
+        position: relative;
+        margin-bottom: 120px;
+    }
+
+    .hero-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .hero__slider{
+        height: 449px;
+        max-width: 600px;
+        border-radius: 24px;
+    }
+
+    .hero-text-container{
+        max-width: 502px;
+        margin-bottom: 0;
+    }
+
+    .hero__title{
+        font-size: 80px;
+        line-height: 96px;  
+    }
+
+    .hero__text{
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .hero__text-icon{
+        width: 32px;
+        height: 32px;
+    }
+    
+    .overlay{
+        padding: 16px 24px;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .arrow{
+        width: 32px;
+        height: 32px;
+    }
+
+    .overlay__list_item{
+        width: 8px;
+        height: 8px;
+        margin-bottom:0;
+    }
+    
+    .dott{
+        width: 100%;
+        height: 100%;
+        margin-bottom:0;
+    }
+    
+    .item--active{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .h2-title{
+        margin-bottom: 48px;
+    }
+   
+    .about-us__card{
+        padding: 16px 24px;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .section{
+        margin-bottom: 120px;
+    }
+    
+    .left-side-container{
+        padding: 28px;
+        
+    }
+
+    .info-card{
+        background: #FFFFFF;
+        box-shadow: 0px 15px 64px rgba(77, 36, 0, 0.06);
+        border-radius: 24px;
+        padding: 4px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .map{
+        margin-bottom: 0;
+        height: 665px;
+        width: 796px;
+    }
+
+    .card-title{
+        font-size: 24px;
+    }
+
+    .adress{
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .adress-container{
+        margin-bottom: 40px;
+    }
+
+    .day{
+        width: 107px;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .time{
+        font-size: 20px;
+        line-height: 32px;      
+    }
+
+    .hours-list{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 93px;
+    }
+
+    .info-card__btn{
+        padding: 12px 0;
+        font-size: 20px;
+        line-height: 32px;
+        cursor: pointer;
+    }
+}
+
 
 
 
