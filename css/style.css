@@ -27,7 +27,7 @@ h1, h2{
 
 a{
     cursor: pointer;
-    display: inline-block;
+    
 }
 
 p,
@@ -241,6 +241,7 @@ header{
 
 .card__link{
     color: #F97836;
+    display: inline-block;
 }
 
 .line{
