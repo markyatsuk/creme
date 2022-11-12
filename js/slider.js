@@ -13,7 +13,6 @@ dottsArray.map((el, i) => {
     i == 0 ? el.insertAdjacentHTML('beforeend', activeDott) : el.insertAdjacentHTML('beforeend', nonActiveDott);
 })
 
-console.log(dottsArray)
 arrowRight.addEventListener("click", () => {
     if(number == 4){
         changePreviousDott();
