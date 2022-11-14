@@ -117,7 +117,7 @@ header{
 }
 
 .bg-container{
-    background: url(../images/hero1920.png);
+    background: url(../images/hero1920-min.png);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -376,8 +376,7 @@ header{
     }
 
     .bg-container{
-        background: url(../images/hero1920.png);
-        background-repeat: no-repeat;
+    background: url(../images/hero1920-min.png);        background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         /* background-position: 10px; */
@@ -519,60 +518,21 @@ header{
 }
 
 @media screen and (min-width: 1920px){
-    header {
-            height: 112px;
-            margin-bottom: 16px;
-        }
     
-        .container {
-            max-width: 1920px;
-            padding: 0 360px;
-        }
+    .container {
+        max-width: 1920px;
+        padding: 0 360px;
+    }
     
-        .logo {
-            display: hidden;
-            width: 0;
-            height: 0;
-        }
-    
-        .logo-desktop {
-            display: block;
-            margin-left: -24px;
-            width: 144px;
-            height: 112px;
-        }
-    
-        .nav-list__item {
-            font-size: 20px;
-    
-        }
-    
-        .nav-list__item+.nav-list__item {
-            margin-left: 32px;
-        }
-    
-        .bg-container {
-            background: url(../images/hero1920.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            /* background-position: 10px; */
-            /* background-attachment: fixed; */
-            position: relative;
-            margin-bottom: 120px;
-        }
-    
-        .hero-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-    
-        .hero__slider {
-            height: 449px;
-            max-width: 600px;
-            border-radius: 24px;
-        }
+    .bg-container {
+        background: url(../images/hero1920-min.png);            background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        /* background-position: 10px; */
+        /* background-attachment: fixed; */
+        position: relative;
+        margin-bottom: 120px;
+    }       
 }
 
 
